@@ -6,7 +6,6 @@ import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
-    const readingTime = readingTimeHelper(post)
 
     return (
         <Link to={url} className="post-card">
@@ -31,7 +30,7 @@ const PostCard = ({ post }) => {
                     <span>{ post.primary_author.name }</span>
                 </div>
                 <div className="post-card-footer-right">
-                    <div>{readingTime}</div>
+                    <div>Leer mas</div>
                 </div>
             </footer>
         </Link>
